@@ -1,11 +1,10 @@
-# 🍓 Agent-Based Digital Twin Framework for Frozen Fruit Quality Prediction
+Agent-Based Digital Twin Framework for Frozen Fruit Quality Prediction
 
 > **Pace University · MS Data Science · 2026**  
 > Alekya Koppaka · Padmaja Preksha Dinesh · Tripsy Bhaveshbhai Kheni
 
----
 
-## 📌 Overview
+ Overview
 
 Frozen fruit degrades silently — ice crystal formation, freeze-thaw cycles, and freezer burn cause irreversible damage long before any visible signs appear. By the time cold-chain managers notice something is wrong, the loss is already done.
 
@@ -15,17 +14,17 @@ This project proposes an **Agent-Based Digital Twin Framework** that combines fr
 
 ---
 
-## 🎯 Problem Statement
+ Problem Statement
 
-- 💸 **$1 trillion** in annual food waste from cold-chain inadequacies worldwide
-- 🧊 **30%** of frozen food lost to undetected temperature abuse and freeze-thaw events
-- ⚠️ Existing monitoring is **reactive and manual** — damage done before detection
-- 📂 **No public dataset** captures frozen-specific degradation visual effects
-- 🔗 No system fuses **image + sensor + agent** in one end-to-end pipeline
+-  **$1 trillion** in annual food waste from cold-chain inadequacies worldwide
+-  **30%** of frozen food lost to undetected temperature abuse and freeze-thaw events
+-  Existing monitoring is **reactive and manual** — damage done before detection
+-  **No public dataset** captures frozen-specific degradation visual effects
+-  No system fuses **image + sensor + agent** in one end-to-end pipeline
 
 ---
 
-## 🏗️ System Architecture — 5-Module Pipeline
+ System Architecture — 5-Module Pipeline
 
 ```
 Fruit Images ──► Module 1: CNN Classifier (EfficientNet-B0 + Grad-CAM) ──► 1280-dim embedding
@@ -41,7 +40,7 @@ IoT Sensors ───► Module 2: BiLSTM Forecaster (Bahdanau Attention)      �
 
 ---
 
-## 📂 Repository Structure
+ Repository Structure
 
 ```
 frozen-fruit-digital-twin/
@@ -70,7 +69,7 @@ frozen-fruit-digital-twin/
 
 ---
 
-## 🔬 Modules in Detail
+ Modules in Detail
 
 ### Module 1 — CNN Image Classifier
 - **Architecture:** EfficientNet-B0 with two-phase transfer learning
@@ -163,7 +162,7 @@ No public dataset captures frozen-specific visual degradation. We simulate the *
 
 ---
 
-## 📊 Results Summary
+ Results Summary
 
 | Module | Metric | Target | Result |
 |--------|--------|--------|--------|
@@ -175,7 +174,7 @@ No public dataset captures frozen-specific visual degradation. We simulate the *
 
 ---
 
-## 🚀 How to Run
+ How to Run
 
 ### 1. Clone the repository
 ```bash
